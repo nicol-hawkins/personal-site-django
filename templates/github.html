@@ -16,7 +16,7 @@
             <h1>My github repos</h1>
             <ol>
             {% for repo in github_repos %}
-                <li>{{ repo.name }}</li>
+                <li> <a href="https://github.com/nicol-hawkins/{{ repo.name }}">{{ repo.name }}</a></li>
             {% endfor %}
             </ol>
         </div>

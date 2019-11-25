@@ -34,12 +34,15 @@ def resume(request):
 
 
 
-# def github_api_example(request):
-#     # We can also combine Django with APIs
-#     response = requests.get('https://api.github.com/users/michaelpb/repos')
-#     repos = response.json()
-#     context = {
-#         'github_repos': repos,
-#     }
-#     return render(request, 'github.html', context)
+def git_api(request):
+    # We can also combine Django with APIs
+    response = requests.get('https://api.github.com/users/nicol-hawkins/repos')
+    repos = response.json()
+    context = {
+        'github_repos': repos,
+    }
+    return render(request, 'github.html', context)
+
+
+    # where do we get this github.html from?
 

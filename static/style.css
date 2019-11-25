@@ -1,0 +1,205 @@
+
+.flex {
+    display: flex;
+  }
+  
+  .portrait {
+      border-radius: 50%;
+      height: 400px;
+      width: 450px;
+      margin-top: 20px;
+      margin-bottom: 200px;
+      margin-left: 15px;
+      
+    }
+  
+  .intro {
+    font-size: 55pt;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    padding-right: -80px;
+    padding-left: 25px;
+    padding-top: 0px;
+  }
+  
+  
+  .btn-blog {
+    border: 3px solid black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 26px;
+    position: relative;
+    top: -140px;
+    right: -700px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background: lightgray;
+    text-decoration: none;
+    
+  }
+  
+  .btn-blog:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    
+  }
+  
+  .btn-resume {
+    border: 3px solid black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 26px;
+    position: relative;
+    top: -140px;
+    right: -775px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background: lightgray;
+    text-decoration: none;
+  }
+  
+  .btn-resume:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    
+  }
+  
+  .btn-about {
+    border: 3px solid black;
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 26px;
+    position: relative;
+    top: -140px;
+    right: -850px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background: lightgray;
+    text-decoration: none;
+    
+  }
+  
+  .btn-about:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  /* How do I set the opacity of the email button so that it
+  is not affected by the transparency of the container?
+  Setting it's opacity to 1 did not change anything.
+   */
+  
+  .btn-email {
+    border: 3px solid black;
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 20px;
+    bottom: 75px;
+    right: 450px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background: white;
+    opacity: 1;
+    text-decoration: none;
+  }
+  
+  .btn-email:hover {
+    background-color: rgb(199, 56, 115); /* Green */
+    color: white;
+  }
+  
+  .btn-link {
+    text-decoration: none;
+  }
+  
+  .btn-github {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 19px;
+    position: fixed;
+    bottom: 10;
+    left: 10;
+    text-decoration: none;
+  }
+  
+  .btn-github:hover {
+    background-color: rgb(199, 56, 115); /* Green */
+    color: white;
+  }
+  
+  .btn-linked-in {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 19px;
+    position: fixed;
+    bottom: 90;
+    left: 10;
+    text-decoration: none;
+  }
+  
+  .btn-linked-in:hover {
+    background-color: rgb(199, 56, 115); /* Green */
+    color: white;
+  }
+  
+  .btn-soundcloud {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 19px;
+    position: fixed;
+    bottom: 50;
+    left: 10;
+    text-decoration: none;
+  }
+  
+  .btn-soundcloud:hover {
+    background-color: rgb(199, 56, 115); /* Green */
+    color: white;
+  }
+  
+  .colorful {
+    background:
+      -webkit-linear-gradient(315deg, hsla(134.84, 92.37%, 42.76%, 1) 0%, hsla(134.84, 92.37%, 42.76%, 0) 70%),
+      -webkit-linear-gradient(65deg, hsla(198.34, 91.23%, 45.94%, 1) 10%, hsla(198.34, 91.23%, 45.94%, 0) 80%),
+      -webkit-linear-gradient(135deg, hsla(4.44, 98.23%, 42.8%, 1) 15%, hsla(4.44, 98.23%, 42.8%, 0) 80%),
+      -webkit-linear-gradient(205deg, hsla(294.1, 92.67%, 46.92%, 1) 100%, hsla(294.1, 92.67%, 46.92%, 0) 70%);
+    background:
+      linear-gradient(135deg, hsla(134.84, 92.37%, 42.76%, 1) 0%, hsla(134.84, 92.37%, 42.76%, 0) 70%),
+      linear-gradient(25deg, hsla(198.34, 91.23%, 45.94%, 1) 10%, hsla(198.34, 91.23%, 45.94%, 0) 80%),
+      linear-gradient(315deg, hsla(4.44, 98.23%, 42.8%, 1) 15%, hsla(4.44, 98.23%, 42.8%, 0) 80%),
+      linear-gradient(245deg, hsla(294.1, 92.67%, 46.92%, 1) 100%, hsla(294.1, 92.67%, 46.92%, 0) 70%);
+    background-size: auto;
+      }
+  
+    .pattern-container {
+      background-image: url("triangle-mosaic.png");
+      background-size: 15%;
+      background-size: auto;
+      height: 100px;
+    }
+  
+    .text-box {
+      height: 450px;
+      width: 675px;
+      background-color:rgb(248, 244, 244);
+      opacity: 0.5;
+      border: 3px solid black;
+      overflow: auto;
+      font-family: 'Noto Sans KR', sans-serif;
+      margin-top: 50px;
+      margin-left: 40px;  
+      padding-left:15px; 
+    }
+  
+  
+  
+  /* Tablet Landscape */
+  
+  
+   
+    /* Confused about whether I apply font stylings to the container, 
+    or to the p class? How do I move the text?  
+    Also, how do I move the text around inside of my container?
+    i.e. create a margin so it's not touch the box.
+  
+    .blog-text {
+      font-family: 'Noto Sans KR', sans-serif;
+  
+    .about-text {
+      right-padding: 20px;
+    }
+     */
+  

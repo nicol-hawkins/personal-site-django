@@ -5,7 +5,7 @@ from django.shortcuts import render
 
 
 def blog(request):
-    blog_html = open("content/blog.html").read()
+    blog_html = open("templates/blog.html").read()
     context = {
         'title': 'Blog',
         'content': blog_html,
@@ -16,7 +16,7 @@ def blog(request):
 
 
 def about_me(request):
-    about_html = open("content/about.html").read()
+    about_html = open("templates/about.html").read()
     context = {
         'title': 'About',
         'content': about_html,
@@ -25,7 +25,7 @@ def about_me(request):
 
 
 def resume(request):
-    resume_html = open("content/resume.html").read()
+    resume_html = open("templates/resume.html").read()
     context = {
         'title': 'Resume',
         'content': resume_html,

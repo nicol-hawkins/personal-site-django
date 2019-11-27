@@ -1,0 +1,1 @@
+ALLOWED_HOSTS = ['shielded-sands-56685.herokuapp.com']

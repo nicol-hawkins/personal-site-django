@@ -1,46 +1,31 @@
 import requests
 from django.http import HttpResponse
 from django.shortcuts import render
-from jinja2 import Template
-
 
 
 def blog(request):
-    blog_html = open("content/blog.html").read()
-    context = {
-        'title': 'Blog',
-        'content': blog_html,
-    }
-    return render(request, 'base.html', context)
+    context = {}
+    return render(request, 'blog.html', context)
     
 
+def resume(request):
+    context = {}
+    return render(request, 'resume.html', context)
 
 
 def about_me(request):
-    about_html = open("content/about.html").read()
+    context = {}
+    return render(request, 'about.html', context)
+
+
+def git_api(request):
+    response = requests.get('https://api.github.com/users/nicol-hawkins/repos')
+    repos = response.json()
     context = {
-        'title': 'About',
-        'content': about_html,
+        'github_repos': repos,
     }
-    return render(request, 'base.html', context)
-
-
-def resume(request):
-    resume_html = open("content/resume.html").read()
-    context = {
-        'title': 'Resume',
-        'content': resume_html,
-    }
-    return render(request, 'base.html', context)
+    return render(request, 'github.html', context)
 
 
 
-# def github_api_example(request):
-#     # We can also combine Django with APIs
-#     response = requests.get('https://api.github.com/users/michaelpb/repos')
-#     repos = response.json()
-#     context = {
-#         'github_repos': repos,
-#     }
-#     return render(request, 'github.html', context)
 

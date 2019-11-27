@@ -1,13 +1,11 @@
 from django.urls import path
-
 import views
 
-# In this example, we've separated out the views.py into a new file
 urlpatterns = [
-    path('blog', views.blog),
-    path('about-me', views.about_me),
-    path('my-resume', views.resume),
-
+    path('', views.blog, name="my-blog"),
+    path('about-me', views.about_me, name="about-me"),
+    path('my-resume', views.resume, name="my-resume"),
+    path('git-repos', views.git_api),
 ]
 
 # Boilerplate to include static files

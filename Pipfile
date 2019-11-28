@@ -1,14 +1,13 @@
 [[source]]
-verify_ssl = true
-url = "https://pypi.python.org/simple"
 name = "pypi"
-
-[packages]
-django = "==2.0.12"
-requests = "*"
-jinja2 = "*"
-
-[requires]
-python_version = "3.6"
+url = "https://pypi.org/simple"
+verify_ssl = true
 
 [dev-packages]
+
+[packages]
+django = "*"
+requests = "*"
+
+[requires]
+python_version = "3.7"

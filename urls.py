@@ -5,7 +5,7 @@ urlpatterns = [
     path('', views.blog, name="my-blog"),
     path('about-me', views.about_me, name="about-me"),
     path('my-resume', views.resume, name="my-resume"),
-    path('git-repos', views.git_api),
+    path('git-repos', views.git_api, name="git-repos"),
 ]
 
 # Boilerplate to include static files

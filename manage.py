@@ -7,6 +7,7 @@ from django.core.management import execute_from_command_line
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 settings.configure(
+    ALLOWED_HOSTS='https://git.heroku.com/shielded-sands-56685.git',
     DEBUG=True,
     ROOT_URLCONF='urls',
     STATIC_URL='static/',
@@ -17,6 +18,7 @@ settings.configure(
     TEMPLATES=[{
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
+    
     
     }],
 )
